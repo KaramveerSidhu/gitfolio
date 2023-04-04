@@ -23,7 +23,8 @@
       "@/*": ["./*"],
       "@constants/*": ["./app/constants/*"],
       "@constants": ["./app/constants/index.ts"],
-      "@components/*": ["./app/components/*"]
+      "@components/*": ["./app/components/*"],
+      "@base": ["./app/_base.scss"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
