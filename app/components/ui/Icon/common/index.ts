@@ -1,1 +1,1 @@
-
+export * from "./chevron-right";
