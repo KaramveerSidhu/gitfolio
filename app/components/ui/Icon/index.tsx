@@ -24,7 +24,7 @@ const Icon = (props: propTypes) => {
       iconPack = common;
   }
 
-  const iconMeta = iconPack[iconName];
+  const iconMeta = iconPack[iconName || path];
   const h = height || iconMeta.height;
   const w = width || iconMeta.width;
   const fill1 = fill || iconMeta.fill;
