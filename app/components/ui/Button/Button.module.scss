@@ -1,0 +1,25 @@
+@import '@base';
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    width: max-content;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: $primary-color;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.primary {
+    background: transparent;
+    box-shadow: #bc8cff 0 0 0 1px inset;
+    transition: box-shadow .5s,outline .5s ease;
+}
+
+.primary:hover {
+    box-shadow: rgb(255 255 255) 0 0 0 2px inset
+}
