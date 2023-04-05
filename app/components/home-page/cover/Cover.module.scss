@@ -4,11 +4,11 @@
     color: $primary-color;
     width: 100%;
     background: red;
-    flex: 1;
+    height: calc(100vh - 67px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 24px 48px;
+    padding: $section-padding;
 }
 
 .intro {
@@ -25,7 +25,7 @@
 
 .desc {
     font-size: 28px;
-    opacity: 0.8;
+    opacity: $text-opacity;
 }
 
 .btnContainer {
