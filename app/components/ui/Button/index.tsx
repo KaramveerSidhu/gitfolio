@@ -1,9 +1,20 @@
 import styles from "./Button.module.scss";
 
-const Button = (props) => {
-  const { children } = props;
+type propTypes = {
+  children: JSX.Element;
+  isLink?: boolean;
+};
+
+const Button = (props: propTypes) => {
+  const { children, isLink } = props;
   return (
-    <button className={`${styles.button} ${styles.primary}`}>{children}</button>
+    <button
+      className={`${styles.button} ${styles.primary} ${
+        isLink ? styles.link : ""
+      }`}
+    >
+      {children}
+    </button>
   );
 };
 
