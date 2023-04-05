@@ -4,6 +4,7 @@ import Icon from "@components/ui/Icon";
 import Link from "next/link";
 import { GITHUB, LINKEDIN } from "@constants";
 import { NAME, SITE_DESCRIPTION } from "@constants";
+import Footer from "@components/shared/footer";
 
 export const metadata = {
   title: NAME,
@@ -25,7 +26,12 @@ export default function RootLayout({
             <li className={styles.listItem}> Projects </li>
             <li className={styles.listItem}> Contact </li>
             <li className={`${styles.listItem} ${styles.lastListItem}`}>
-              Resume
+              <Link
+                href="/karamveer-sidhu-resume.pdf"
+                className={styles.resumeLink}
+              >
+                Resume
+              </Link>
             </li>
           </ul>
         </nav>
@@ -38,6 +44,7 @@ export default function RootLayout({
           </Link>
         </div>
         {children}
+        <Footer />
       </body>
     </html>
   );
