@@ -1,8 +1,11 @@
+@import '@base';
+
 .main {
-  width: 100%;
+  width: calc(100% - 88px);
   min-height: 100vh;
   padding-top: 67px;
   margin-left: 88px;
   display: flex;
   flex-direction: column;
+  color: $primary-color;
 }
