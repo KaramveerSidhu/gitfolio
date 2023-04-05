@@ -1,0 +1,31 @@
+@import '@base';
+
+.about {
+    padding: $section-padding;
+    color: $primary-color;
+    background: yellow;
+    width: 100%;
+}
+
+.heading {
+    @include section-heading;
+}
+
+.aboutDetails {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.img {
+    text-align: center;
+}
+
+.desc {
+    width: 50%;
+    font-size: 20px;
+    opacity: $text-opacity;
+    font-weight: 300;
+    line-height: 30px;
+}
