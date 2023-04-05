@@ -1,0 +1,19 @@
+@import "@base";
+
+.footer {
+  padding: $section-padding;
+  margin-left: 88px;
+  color: $primary-color;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  background: orange;
+}
+
+.madeBy {
+  text-align: center;
+  width: 350px;
+  border-bottom: 2px solid hsla(0, 0%, 100%, 0.1);
+  padding-bottom: 12px;
+}
