@@ -2,3 +2,17 @@ $primary-color: #FFFFFF;
 $primary-bg-color: #0D1117;
 $violet: #bc8cff;
 $green: #7ee787;
+
+$section-padding: 32px 48px;
+$section-heading-font-size: 48px;
+$section-heading-mb: 32px;
+
+$text-opacity: 0.7;
+
+$btn-padding: 16px 24px;
+
+@mixin section-heading {
+    font-size: $section-heading-font-size;
+    margin-bottom: $section-heading-mb;
+    text-align: center;
+}
