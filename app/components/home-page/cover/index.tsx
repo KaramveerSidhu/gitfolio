@@ -1,6 +1,7 @@
 import Button from "@components/ui/Button";
 import styles from "./Cover.module.scss";
 import Icon from "@components/ui/Icon";
+import Link from "next/link";
 
 const Cover = () => {
   return (
@@ -11,8 +12,10 @@ const Cover = () => {
         with robust & scalable web applications.
       </div>
       <div className={styles.btnContainer}>
-        <Button>
-          View Projects <Icon url="chevron_right" stroke="#FFFFFF" />
+        <Button isLink>
+          <Link href="/projects" className={styles.link}>
+            View Projects <Icon url="chevron_right" stroke="#FFFFFF" />
+          </Link>
         </Button>
       </div>
     </div>
