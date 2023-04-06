@@ -1,0 +1,12 @@
+.sidebar {
+  height: 100%;
+  position: fixed;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  left: 0;
+}

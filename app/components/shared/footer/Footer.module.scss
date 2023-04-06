@@ -5,10 +5,10 @@
   margin-left: 88px;
   color: $primary-color;
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   display: flex;
   justify-content: center;
-  background: orange;
+  position: relative;
 }
 
 .madeBy {
@@ -16,4 +16,10 @@
   width: 350px;
   border-bottom: 2px solid hsla(0, 0%, 100%, 0.1);
   padding-bottom: 12px;
+}
+
+.img {
+  position: absolute;
+  right: 16px;
+  bottom: 0;
 }

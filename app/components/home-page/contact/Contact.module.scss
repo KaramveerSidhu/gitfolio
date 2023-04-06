@@ -1,8 +1,17 @@
 @import "@base";
 
 .contact {
+  display: flex;
+  justify-content: center;
+  margin: 48px 0px;
+}
+
+.contactContent {
   padding: $section-padding;
-  background: pink;
+  border: 2px solid $space;
+  width: max-content;
+  background: $secondary-bg-color;
+  border-radius: 8px;
 }
 
 .heading {

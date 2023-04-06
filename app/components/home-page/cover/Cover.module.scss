@@ -1,33 +1,38 @@
-@import '@base';
+@import "@base";
 
 .cover {
-    color: $primary-color;
-    width: 100%;
-    background: red;
-    height: calc(100vh - 67px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: $section-padding;
+  color: $primary-color;
+  width: 100%;
+  height: calc(100vh - 67px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $section-padding;
 }
 
 .intro {
-    font-size: 32px;
-    color: $green;
-    margin-bottom: 16px;
+  font-size: 32px;
+  color: $green;
+  margin-bottom: 16px;
 }
 
 .main {
-    font-size: 72px;
-    font-weight: 900;
-    margin-bottom: 16px;
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 16px;
 }
 
 .desc {
-    font-size: 28px;
-    opacity: $text-opacity;
+  font-size: 28px;
+  opacity: $text-opacity;
 }
 
 .btnContainer {
-    margin-top: 24px;
+  margin-top: 24px;
+}
+
+.link {
+  display: flex;
+  padding: $btn-padding;
+  align-items: center;
 }
