@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div id="about" className={styles.about}>
       <h1 className={styles.heading}> About </h1>
       <div className={styles.aboutDetails}>
         <div className={styles.desc}>
@@ -22,14 +22,14 @@ const About = () => {
           sports, hitting the gym, or simply wandering around like a flaneur. I
           also dabble in drawing as a hobby.
         </div>
-        <div className={styles.img}>
+        {/* <div className={styles.img}>
           <Image
             src="/karamveer.png"
             width={200}
             height={240}
             alt="Karamveer Singh Sidhu"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
