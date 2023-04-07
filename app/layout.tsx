@@ -1,10 +1,9 @@
+import Footer from "@components/shared/footer";
+import { NAME, SITE_DESCRIPTION } from "@constants";
+import Navbar from "./components/shared/navbar";
+import Sidebar from "./components/shared/sidebar";
 import "./globals.css";
 import styles from "./layout.module.scss";
-import Link from "next/link";
-import { NAME, SITE_DESCRIPTION } from "@constants";
-import Footer from "@components/shared/footer";
-import Sidebar from "./components/shared/sidebar";
-import Navbar from "./components/shared/navbar";
 
 export const metadata = {
   title: NAME,
@@ -21,7 +20,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <Sidebar />
-        {children}
+        <main className={styles.main}> {children} </main>
         <Footer />
       </body>
     </html>
