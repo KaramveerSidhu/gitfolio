@@ -7,10 +7,11 @@ type propTypes = {
   height?: string;
   fill?: string;
   stroke?: string;
+  title?: string;
 };
 
 const Icon = (props: propTypes) => {
-  const { url = "", width, height, fill, stroke } = props;
+  const { url = "", width, height, fill, stroke, title } = props;
 
   let iconPack;
   const splitUrl = url.split("-");
@@ -30,7 +31,7 @@ const Icon = (props: propTypes) => {
   const fill1 = fill || iconMeta.fill;
   const stroke1 = stroke || iconMeta.stroke;
 
-  const svg = iconMeta.svg(fill1, stroke1);
+  const svg = iconMeta.svg(fill1, stroke1, title);
 
   return (
     <div style={{ height: h, width: w, position: "relative" }}>
