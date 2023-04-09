@@ -25,6 +25,7 @@
       "@constants": ["./app/constants/index.ts"],
       "@components/*": ["./app/components/*"],
       "@base": ["./app/_base.scss"],
+      "@data": ["./data/index.ts"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
