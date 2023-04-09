@@ -38,3 +38,12 @@ a {
   background: #d4d4d4;
   border-radius: 50px;
 }
+
+ul {
+  list-style-type: "-";
+}
+
+li {
+  margin: 8px 0px;
+  padding-left: 8px;
+}
