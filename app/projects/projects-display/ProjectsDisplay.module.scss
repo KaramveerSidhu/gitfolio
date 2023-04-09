@@ -1,0 +1,60 @@
+@import "@base";
+
+.project {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 100px;
+  position: relative;
+  background: $secondary-bg-color;
+  padding: 24px;
+  border: 2px solid $space;
+  border-radius: 4px;
+}
+
+.projectImg {
+  width: 50%;
+  position: relative;
+  height: 300px;
+  opacity: $text-opacity;
+}
+
+.projectImg:hover {
+  opacity: 1;
+}
+
+.projectImg > img {
+  border-radius: 4px;
+}
+
+.projectDetailsContainer {
+  width: 50%;
+}
+
+.projectContent {
+  margin: 16px 0px;
+  border-radius: 8px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  opacity: $text-opacity;
+  line-height: 22px;
+}
+
+.projectContentList {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.projectHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.urls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
