@@ -2,22 +2,19 @@
 
 .project {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  flex-direction: column;
   width: 100%;
-  align-items: center;
-  margin-bottom: 100px;
-  position: relative;
   background: $secondary-bg-color;
   padding: 24px;
   border: 2px solid $space;
   border-radius: 4px;
+  margin-bottom: 64px;
 }
 
 .projectImg {
-  width: 50%;
+  width: 450px;
   position: relative;
-  height: 300px;
+  height: 280px;
   opacity: $text-opacity;
 }
 
@@ -25,12 +22,16 @@
   opacity: 1;
 }
 
-.projectImg > img {
+.projectImg img {
   border-radius: 4px;
+  object-fit: contain;
 }
 
 .projectDetailsContainer {
-  width: 50%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
 }
 
 .projectContent {
@@ -40,6 +41,7 @@
   letter-spacing: 0.4px;
   opacity: $text-opacity;
   line-height: 22px;
+  width: 50%;
 }
 
 .projectContentList {
@@ -57,4 +59,10 @@
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.skillsContainer {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
