@@ -47,3 +47,8 @@ li {
   margin: 8px 0px;
   padding-left: 8px;
 }
+
+mark {
+  background: inherit;
+  color: #7ee787;
+}
