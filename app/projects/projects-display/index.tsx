@@ -13,7 +13,7 @@ type projectType = {
   sourceCodeURL?: string;
   appURL?: string;
   imgURL: string;
-  skills?: Array<string>;
+  skills: Array<string>;
 };
 
 type propTypes = {
@@ -29,34 +29,35 @@ const ProjectsDisplay = (props: propTypes) => {
         const projectContent = project.content
           ? parseHTML(marked.parse(project.content))
           : "";
+        const projectLink = project.appURL || project.sourceCodeURL;
 
         return (
           <div key={project.id} className={styles.project}>
-            <div className={styles.projectDetailsContainer}>
-              <div className={styles.projectHeader}>
-                <h2>{project.title}</h2>
-                <div className={styles.urls}>
-                  {project.sourceCodeURL && (
-                    <Link
-                      href={project.sourceCodeURL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Icon url="pr-github" title="Source Code" />
-                    </Link>
-                  )}
-                  {project.appURL && (
-                    <Link
-                      href={project.appURL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Icon url="external" title="Hosted App" />
-                    </Link>
-                  )}
-                </div>
+            <div className={styles.projectHeader}>
+              <h2>{project.title}</h2>
+              <div className={styles.urls}>
+                {project.sourceCodeURL && (
+                  <Link
+                    href={project.sourceCodeURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon url="pr-github" title="Source Code" />
+                  </Link>
+                )}
+                {project.appURL && (
+                  <Link
+                    href={project.appURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon url="external" title="Hosted App" />
+                  </Link>
+                )}
               </div>
+            </div>
 
+            <div className={styles.projectDetailsContainer}>
               <div className={styles.projectContent}>
                 <div>{project.description}</div>
 
@@ -64,9 +65,26 @@ const ProjectsDisplay = (props: propTypes) => {
                   {projectContent}
                 </div>
               </div>
+
+              <div className={styles.projectImg}>
+                {projectLink ? (
+                  <Link
+                    href={projectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image src={project.imgURL} fill alt={project.imgURL} />
+                  </Link>
+                ) : (
+                  <Image src={project.imgURL} fill alt={project.imgURL} />
+                )}
+              </div>
             </div>
-            <div className={styles.projectImg}>
-              <Image src={project.imgURL} fill alt={project.imgURL} />
+
+            <div className={styles.skillsContainer}>
+              {project.skills.map((skill) => {
+                return <mark key={skill}>{skill}</mark>;
+              })}
             </div>
           </div>
         );
