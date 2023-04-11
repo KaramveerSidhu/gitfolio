@@ -3,7 +3,7 @@
 import Tabs from "./tabs";
 import styles from "./Projects.module.scss";
 import { useState } from "react";
-import { PROJECTS_PERSONAL } from "@data";
+import { PROJECTS_CONTRIBUTED, PROJECTS_PERSONAL } from "@data";
 import ProjectsDisplay from "./projects-display";
 
 const Projects = () => {
@@ -13,7 +13,9 @@ const Projects = () => {
   return (
     <div className={styles.projects}>
       <Tabs activeTab={activeTab} onChange={setActiveTab} />
-      <ProjectsDisplay projects={isPersonalActive ? PROJECTS_PERSONAL : []} />
+      <ProjectsDisplay
+        projects={isPersonalActive ? PROJECTS_PERSONAL : PROJECTS_CONTRIBUTED}
+      />
     </div>
   );
 };
