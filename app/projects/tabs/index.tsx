@@ -24,7 +24,7 @@ const Tabs = (props: propTypes) => {
         className={clsx(styles.tab, isPersonalActive && styles.active)}
         onClick={() => onChange("personal")}
       >
-        Personal Projects
+        Independent Projects
       </div>
     </div>
   );
