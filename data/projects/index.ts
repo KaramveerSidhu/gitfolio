@@ -8,6 +8,7 @@ import {
   covid19TrackerData,
   faceDetectionAppData,
   faceRecognitionData,
+  tutortData,
 } from "./personal";
 
 export const PROJECTS_CONTRIBUTED = [
@@ -16,6 +17,7 @@ export const PROJECTS_CONTRIBUTED = [
   exposureAppData,
 ];
 export const PROJECTS_PERSONAL = [
+  tutortData,
   covid19TrackerData,
   aINewsAppData,
   faceDetectionAppData,
