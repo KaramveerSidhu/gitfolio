@@ -10,10 +10,14 @@ type propTypes = {
   title?: string;
 };
 
+type iconPackType = {
+  [key: string]: any;
+};
+
 const Icon = (props: propTypes) => {
   const { url = "", width, height, fill, stroke, title } = props;
 
-  let iconPack;
+  let iconPack: iconPackType;
   const splitUrl = url.split("-");
   const [path, iconName] = splitUrl;
 
