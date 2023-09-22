@@ -1,0 +1,21 @@
+@import "@base";
+
+.container {
+  padding: 48px;
+}
+
+.blog {
+  @include card;
+  margin-bottom: 32px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.description {
+  margin-top: 16px;
+  opacity: $text-opacity;
+}
