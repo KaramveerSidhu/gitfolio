@@ -7,16 +7,28 @@ $space: #30363d;
 
 $section-padding: 48px;
 $section-heading-font-size: 48px;
+$section-heading-font-size-secondary: 32px;
 $section-heading-mb: 48px;
+$section-heading-mb-secondary: 32px;
+
+$section-padding-alt: 24px;
 
 $text-opacity: 0.7;
 
 $btn-padding: 16px 24px;
 
+$breakpoint-primary: 768px;
+$breakpoint-secondary: 480px;
+
 @mixin section-heading {
   font-size: $section-heading-font-size;
   margin-bottom: $section-heading-mb;
   text-align: center;
+}
+
+@mixin section-heading-secondary {
+  font-size: $section-heading-font-size-secondary;
+  margin-bottom: $section-heading-mb-secondary;
 }
 
 @mixin card {

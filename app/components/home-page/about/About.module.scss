@@ -30,3 +30,17 @@
   line-height: 30px;
   text-align: center;
 }
+
+@media screen and (max-width: $breakpoint-primary) {
+  .heading {
+    @include section-heading-secondary;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .about {
+    padding: $section-padding-alt;
+  }
+}

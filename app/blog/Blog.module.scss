@@ -1,7 +1,7 @@
 @import "@base";
 
 .container {
-  padding: 48px;
+  padding: $section-padding;
 }
 
 .blog {
@@ -18,4 +18,18 @@
 .description {
   margin-top: 16px;
   opacity: $text-opacity;
+}
+
+@media screen and (max-width: $breakpoint-secondary) {
+  .container {
+    padding: $section-padding-alt;
+  }
+
+  .title > h2 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
 }

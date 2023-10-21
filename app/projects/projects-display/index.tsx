@@ -34,7 +34,7 @@ const ProjectsDisplay = (props: propTypes) => {
         return (
           <div key={project.id} className={styles.project}>
             <div className={styles.projectHeader}>
-              <h2>{project.title}</h2>
+              <h2 className={styles.projectTitle}>{project.title}</h2>
               <div className={styles.urls}>
                 {project.sourceCodeURL && (
                   <Link

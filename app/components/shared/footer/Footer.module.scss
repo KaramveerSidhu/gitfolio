@@ -2,7 +2,6 @@
 
 .footer {
   padding: $section-padding;
-  margin-left: 88px;
   color: $primary-color;
   font-size: 18px;
   letter-spacing: 0.5px;
@@ -22,4 +21,10 @@
   position: absolute;
   right: 16px;
   bottom: 0;
+}
+
+@media screen and (max-width: $breakpoint-primary) {
+  .img {
+    bottom: -220px;
+  }
 }
