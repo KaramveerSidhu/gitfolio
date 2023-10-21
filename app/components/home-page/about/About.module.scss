@@ -44,3 +44,9 @@
     padding: $section-padding-alt;
   }
 }
+
+@media screen and (max-width: $breakpoint-secondary) {
+  .desc {
+    width: 100%;
+  }
+}

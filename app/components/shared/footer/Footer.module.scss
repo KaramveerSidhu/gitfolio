@@ -28,3 +28,10 @@
     bottom: -220px;
   }
 }
+
+@media screen and (max-width: $breakpoint-secondary) {
+  .img {
+    padding-bottom: 64px;
+    bottom: -280px;
+  }
+}

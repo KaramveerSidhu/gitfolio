@@ -53,3 +53,17 @@
   top: 4px;
   left: 0;
 }
+
+@media screen and (max-width: $breakpoint-secondary) {
+  .logoLink {
+    display: none;
+  }  
+
+  .firstListItem {
+    margin-left: 0;
+  }
+
+  .navbar {
+    padding: 16px 0px;
+  }
+}
