@@ -35,3 +35,19 @@
 .link {
   padding: $btn-padding;
 }
+
+@media screen and (max-width: $breakpoint-primary) {
+  .contactContent {
+    width: 100%;
+  }
+
+  .heading {
+    @include section-heading-secondary;
+  }
+
+  .build {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+

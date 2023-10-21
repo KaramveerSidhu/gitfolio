@@ -59,3 +59,32 @@
   gap: 12px;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1250px) {
+  .projectDetailsContainer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .projectContent, .projectImg {
+    width: 100%;
+  }
+
+  .projectImg {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-secondary) {
+  .projectTitle {
+    font-size: 20px;
+  }
+
+  .projectContent {
+    font-size: 12px;
+  }
+
+  .projectImg {
+    height: 150px;
+  }
+}

@@ -10,3 +10,16 @@
   flex-direction: column;
   color: $primary-color;
 }
+
+@media screen and (max-width: $breakpoint-primary) {
+  .main {
+    padding-right: 44px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-secondary) {
+  .main {
+    padding-right: 22px;
+    margin-left: 64px;
+  }
+}

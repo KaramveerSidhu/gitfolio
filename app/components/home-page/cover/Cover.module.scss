@@ -36,3 +36,21 @@
   padding: $btn-padding;
   align-items: center;
 }
+
+@media screen and (max-width: $breakpoint-primary) {
+  .cover {
+    padding: $section-padding-alt;
+  }
+
+  .intro {
+    font-size: 24px;
+  }
+
+  .main {
+    font-size: 48px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+}

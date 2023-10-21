@@ -4,3 +4,9 @@
   padding: $section-padding;
   margin-bottom: 100px;
 }
+
+@media screen and (max-width: $breakpoint-primary) {
+  .projects {
+    padding: $section-padding-alt;
+  }
+}
