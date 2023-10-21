@@ -15,6 +15,14 @@
 
 @media screen and (max-width: $breakpoint-secondary) {
   .sidebar {
-    padding: 0px 12px;
+    padding: 12px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    height: max-content;
+    background-color: inherit;
+    z-index: 10;
+    width: 99%;
   }
 }

@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <ul className={styles.list}>
-        <li className={styles.listItem}>
+        <li className={clsx(styles.listItem, styles.logoLink)}>
           <Link href="/" className={styles.link}>
             <div className={styles.logo}>
               <Image
