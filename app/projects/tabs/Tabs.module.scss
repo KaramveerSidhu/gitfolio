@@ -36,3 +36,9 @@
     margin-bottom: 24px;
   }
 }
+
+@media screen and (max-width: $breakpoint-tertiary) {
+  .tabs {
+    font-size: 11px;
+  }
+}

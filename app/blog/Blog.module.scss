@@ -33,3 +33,10 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: $breakpoint-tertiary) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

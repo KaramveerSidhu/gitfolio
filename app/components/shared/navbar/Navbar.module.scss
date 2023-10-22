@@ -67,3 +67,9 @@
     padding: 16px 0px;
   }
 }
+
+@media screen and (max-width: $breakpoint-tertiary) {
+  .firstListItem {
+    display: none;
+  }
+}
