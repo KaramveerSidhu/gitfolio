@@ -10,3 +10,10 @@
     padding: $section-padding-alt;
   }
 }
+
+@media screen and (max-width: $breakpoint-tertiary) {
+  .projects {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

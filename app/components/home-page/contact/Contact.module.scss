@@ -51,3 +51,9 @@
   }
 }
 
+@media screen and (max-width: $breakpoint-tertiary) {
+  .contactContent {
+    padding: 24px;
+  }
+}
+

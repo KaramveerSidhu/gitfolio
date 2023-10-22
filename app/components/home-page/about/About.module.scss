@@ -50,3 +50,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: $breakpoint-tertiary) {
+  .about {
+    padding: 12px;
+  }
+}
