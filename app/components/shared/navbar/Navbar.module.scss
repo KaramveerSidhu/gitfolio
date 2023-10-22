@@ -66,10 +66,18 @@
   .navbar {
     padding: 16px 0px;
   }
+
+  .lastListItem {
+    margin-right: 16px;
+  }
 }
 
 @media screen and (max-width: $breakpoint-tertiary) {
   .firstListItem {
     display: none;
+  }
+
+  .lastListItem {
+    margin-right: 12px;
   }
 }
